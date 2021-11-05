@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <title>Học viện Công nghệ Bưu chính Viễn thông</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="assets/vendor/fontawesome-free-5.15.4-web/css/all.min.css" />
+    <!-- External css files -->
+    <link rel="stylesheet" href="assets/css/setup.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+
+<body>
+    <!-- topbar -->
+
+    <header class="topbar bg-white">
+        <section class="container py-4">
+            <div class="row">
+                <div class="col-xl-9 col-lg-9 d-flex col-md-12 col-sm-12">
+                    <div class="university-name d-flex">
+                        <div>
+                            <a href="index.html">
+                                <img src="assets/images/ptit-logo.png" alt="logo" />
+                            </a>
+                        </div>
+                        <div>
+                            <h1 class="display-5">
+                                HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG
+                            </h1>
+                            <h3 class="text-red display-6">
+                                Posts and Telecommunications Institute of Technology
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-sm-12 topbar__info row">
+                    <p class="col-xl-12 col-lg-12 col-md-6 col-sm-6">
+                        <i class="fa fa-envelope text-red"></i> admin@ptit.edu.vn
+                    </p>
+                    <p class="col-xl-12 col-lg-12 col-md-6 col-sm-6">
+                        <i class="fa fa-phone text-red"></i> (024) 33528122
+                    </p>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- navar -->
+
+    <nav class="navbar sticky-top navbar-default navbar-expand-lg
+            navbar-light bg-red">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"> <a class="nav-link" href="index.html">Trang chủ</a> </li>
+                    <li class="nav-item dropdown"><a class="nav-link
+                                dropdown-toggle" href="./pages/introductions/history.html" data-bs-toggle="dropdown">Giới thiệu</a>
+                        <ul class="dropdown-menu bg-red">
+                            <li><a class="dropdown-item" href="./pages/introductions/history.html">
+                                    Lịch sử
+                                </a></li>
+                            <li><a class="dropdown-item" href="./pages/introductions/misson.html">
+                                    Nhiệm vụ
+                                </a></li>
+                            <li><a class="dropdown-item" href="./pages/introductions/logo.html">
+                                    Ý nghĩa
+                                    logo </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/news/news.html">Tin
+                            tức</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./pages/majors/index.html" data-bs-toggle="dropdown">Ngành học</a>
+                        <ul class="dropdown-menu bg-red">
+                            <li><a class="dropdown-item" href="./pages/majors/multimedia.html">
+                                    Công
+                                    Nghệ
+                                    thông tin </a></li>
+                            <li><a class="dropdown-item" href="./pages/majors/multimedia.html">
+                                    An
+                                    toàn
+                                    thông tin </a></li>
+                            <li><a class="dropdown-item" href="./pages/majors/multimedia.html">
+                                    Điện
+                                    tử
+                                    ciễn thông </a></li>
+                            <li><a class="dropdown-item" href="./pages/majors/multimedia.html">
+                                    Đa
+                                    phương
+                                    tiện </a></li>
+                            <li><a class="dropdown-item" href="./pages/majors/multimedia.html">
+                                    Công
+                                    Nghệ
+                                    tài chính </a></li>
+                            <li><a class="dropdown-item" href="./pages/majors/multimedia.html">
+                                    Thương
+                                    mại điện tử </a></li>
+                            <li><a class="dropdown-item" href="./pages/majors/multimedia.html">
+                                    Markerting </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active"> <a class="nav-link" href="./pages/admissions.html">Tuyển sinh</a>
+                    </li>
+                    <li class="nav-item active"> <a class="nav-link" href="./pages/student.html">Sinh viên</a> </li>
+                    <li class="nav-item active"> <a class="nav-link" href="./pages/contact.html">Liên hệ</a> </li>
+                </ul>
+            </div>
+            <!-- navbar-collapse.// -->
+            <form class="form-inline">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+                </div>
+            </form>
+        </div>
+        <!-- container-fluid.// -->
+
+    </nav>
+    <!-- slide -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Assets/images/BANNER-WEBSITE_BANNER-WEBSITE-PTIT.png" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="./Assets/images/Slide-Banner-Web2.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="./Assets/images/Slide-Banner-Web3.jpg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="./Assets/images/Slide-Banner-Web.jpg" alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- content-->
+    <!-- section1-->
+    <div class="container-fluid text-center ">
+        <h2 class="font-family-bold text-red">THÀNH TÍCH</h2>
+        <br>
+        <div class="row">
+            <div class="col-sm-4">
+                <p class="font-family-bold text-red text-uppercase display-3">
+                    5★
+                </p>
+                <h4 class="font-family-bold text-red">CHẤT LƯỢNG</h4>
+                <p>Đánh giá dựa trên tiêu chuẩn QS</p>
+            </div>
+            <div class="col-sm-4">
+                <p class="font-family-bold text-red text-uppercase display-3">
+                    5
+                </p>
+                <h4 class="font-family-bold text-red">CƠ SỞ DÀO TẠO</h4>
+                <p>Top 5 các đại học lĩnh vực ICT</p>
+            </div>
+            <div class="col-sm-4">
+                <p class="font-family-bold text-red text-uppercase display-3">
+                    98%
+                </p>
+                <h4 class="font-family-bold text-red">SINH VIÊN</h4>
+                <p>Có việc làm sau tốt nghiệp</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <p class="font-family-bold text-red text-uppercase display-3">
+                    4
+                </p>
+                <h4 class="font-family-bold text-red">CƠ SỞ</h4>
+                <p>4 Cơ sở nghiên cứu học tập trên cả nước</p>
+            </div>
+            <div class="col-sm-4">
+                <p class="font-family-bold text-red text-uppercase display-3">
+                    90%
+                </p>
+                <h4 class="font-family-bold text-red">GIẢNG VIÊN</h4>
+                <p>Có bằng thạc sĩ, tiến sĩ trở lên</p>
+            </div>
+            <div class="col-sm-4">
+                <p class="font-family-bold text-red text-uppercase display-3">
+                    8.5 tr
+                </p>
+                <h4 class="font-family-bold text-red">THU NHẬP</h4>
+                <p>Thu nhập trung bình của sinh viên mới tốt nghiệp</p>
+            </div>
+
+        </div>
+
+    </div>
+    <hr class="featurette-divider">
+
+    <!-- sectiton2 -->
+    <section class="education mt-4">
+
+    </section>
+
+    <div class="container-fluid text-center col-sm-10 ">
+        <h2 class="font-family-bold text-red">LĨNH VỰC ĐÀO TẠO</h2>
+        <br>
+        <div class="row mt-2">
+            <div class="col-sm-3">
+                <div class="mb-3">
+                    <img width="140" height="140" class="bd-placeholder-img " src="assets/images/it.png " alt="it " />
+                </div>
+                <p>CÔNG NGHỆ THÔNG TIN</p>
+            </div>
+            <div class="col-sm-3 ">
+                <div class="mb-3">
+                    <img width="140" height="140" class="bd-placeholder-img " src="assets/images/multimedia.png " alt="multimedia" />
+                </div>
+                <p>ĐA PHƯƠNG TIỆN</p>
+            </div>
+            <div class="col-sm-3 ">
+                <div class="mb-3">
+                    <img width="140" height="140" class="bd-placeholder-img " src="assets/images/vt.png " alt="multimedia" />
+                </div>
+                <p>ĐIỆN TỬ - VIỄN THÔNG</p>
+            </div>
+            <div class="col-sm-3 ">
+                <div class="mb-3">
+                    <img width="140" height="140" class="bd-placeholder-img " src="assets/images/tmdt.png " alt="multimedia" />
+                </div>
+                <p>TÀI CHÍNH - MARKETING</p>
+            </div>
+
+        </div>
+
+    </div>
+    <hr class="featurette-divider ">
+    <section class="oldstudent mt-4 text-center">
+        <h2 class="font-family-bold text-red">CỰU SINH VIÊN ƯU TÚ</h2>
+
+        <div class="container marketing mt-5">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="../Assets/images/Sv3.png" width="140" height="140" class="bd-placeholder-img rounded-circle">
+                    <h2>Ts. Dương Thị Thùy Vân</h2>
+                    <p>Sinh viên Khoa CNTT khóa 2000, Nữ tiến sĩ đầu tiên nhận bằng sáng chế tại Mỹ</p>
+                    <p><a class="btn btn-secondary bg-red" href="https://portal.ptit.edu.vn/nu-tien-si-dau-tien-o-viet-nam-nhan-bang-sang-che-cua-my/">Chi
+                            tiết &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="../Assets/images/Sv2.jpg" width="140" height="140" class="bd-placeholder-img rounded-circle">
+                    <h2>Lê Duy Bách</h2>
+                    <p>Học sinh ưu tú khoa CNTT, "trùm cuối" cuộc thi "Siêu trí tuệ"</p>
+                    <p><a class="btn btn-secondary bg-red" href="https://www.facebook.com/clubproptit/photos/a.389984581123545/4144507825671183/">Chi
+                            tiết &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="../Assets/images/Sv1.jpg" width="140" height="140" class="bd-placeholder-img rounded-circle">
+                    <h2>Lê Anh Đức</h2>
+                    <p>Cựu chủ nhiệm câu lạc bộ Multimedia Ptit, sáng tạo nội dung tại VTV</p>
+                    <p><a class="btn btn-secondary bg-red" href="https://www.facebook.com/clbmultimediaptit">Chi tiết
+                            &raquo;</a></p>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+
+        </div>
+    </section>
+    <hr class="featurette-divider">
+    <!---section43 -->
+    <section class="news mt-4">
+        <div class="row justify-content-center">
+            <h3 class="font-family-bold text-red  col-sm-10">TIN TỨC MỚI</h3>
+
+        </div>
+
+        <div class="container marketing mt-5 ">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row ">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 my-2">
+                    <div class="card border-0 p-2 shadow col-12">
+                        <img src="./Assets/images/news-1.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+
+                            <h5 class="card-title font-family-bold">Sinh viên PTIT nhận được sự quan tâm lớn của cộng đồng doanh nghiệp số</h5>
+                            <small class="text-mute text-black-50">21/10/2021</small><br>
+                            <a href="#" class="btn btn-primary bg-red">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 my-2">
+                    <div class="card border-0 p-2 shadow">
+                        <img src="./Assets/images/news-2.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title font-family-bold ">Phiên họp thứ sáu Hội đồng Học viện Công nghệ Bưu chính Viễn thông</h5>
+                            <small class="text-mute text-black-50">11/10/2021</small><br>
+                            <a href="#" class="btn btn-primary bg-red">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 my-2">
+                    <div class="card border-0 p-2 shadow">
+                        <img src="./Assets/images/news-3.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title font-family-bold ">Năm học mới đặc biệt của Học viện Công nghệ Bưu chính Viễn thông 2021-2022</h5>
+                            <small class="text-mute text-black-50">11/10/2021</small><br>
+                            <a href="#" class="btn btn-primary bg-red">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+
+        </div>
+
+        <div class="container marketing mt-4 mb-4 ">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row ">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 my-2">
+                    <div class="card border-0 p-2 shadow col-12">
+                        <img src="./Assets/images/news-6.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+
+                            <h5 class="card-title font-family-bold">Thư chúc mừng 24 năm ngày truyền thống Học viện Công nghệ Bưu chính Viễn thông (17/9/1997 – 17/9/2021)</h5>
+                            <small class="text-mute text-black-50">17/9/2021</small><br>
+                            <a href="#" class="btn btn-primary bg-red">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 my-2">
+                    <div class="card border-0 p-2 shadow">
+                        <img src="./Assets/images/news-5.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title font-family-bold ">Một hệ sinh thái ban đầu cho trường đại học số đã được hình thành ở Học viện Công nghệ Bưu chính Viễn thông</h5>
+                            <small class="text-mute text-black-50">11/11/2021</small><br>
+                            <a href="#" class="btn btn-primary bg-red">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 my-2">
+                    <div class="card border-0 p-2 shadow">
+                        <img src="./Assets/images/news-4.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title font-family-bold ">Học viện Công nghệ Bưu chính Viễn thông xúc tiến hợp tác với Tập đoàn Công nghệ HCL Technologies Malaysia</h5>
+                            <small class="text-mute text-black-50">11/10/2021</small><br>
+                            <a href="#" class="btn btn-primary bg-red">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+
+        </div>
+        <div class="row justify-content-end">
+            <div class="mt-4 load-more col-sm-2">
+                <a href="./pages/news/index.html" class="btn btn-outline-danger">Xem thêm</a>
+            </div>
+        </div>
+
+    </section>
+
+    <hr class="featurette-divider">
+    <!-- section4 -->
+
+    <section class="news mt-4">
+        <div class="row justify-content-center">
+            <h3 class="font-family-bold text-red  col-sm-10">TIN TỨC MỚI</h3>
+
+        </div>
+
+        <div class="container marketing mt-5 ">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row ">
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <div class="card border-0 p-2 shadow col-12">
+                        <img src="./Assets/images/thong-bao-ptit.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+
+                            <h5 class="card-title font-family-bold">Thông báo sơ kết học kỳ 2 năm học 2020-2021</h5>
+                            <small class="text-mute text-black-50">21/10/2021</small><br>
+                            <a href="#" class="btn btn-primary bg-red">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-6 col-sm-4  col-lg-2">
+                    <div class="card border-0 p-2 shadow">
+                        <img src="./Assets/images/thong-bao-ptit.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title font-family-bold ">Thông báo nạp học phí kỳ 1 năm 2021-2022</h5>
+                            <small class="text-mute text-black-50">11/10/2021</small><br>
+                            <a href="#" class="btn btn-primary bg-red">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-6 col-sm-4   col-lg-2">
+                    <div class="card border-0 p-2 shadow">
+                        <img src="./Assets/images/thong-bao-ptit.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title font-family-bold ">Thông báo cập nhật lịch D18</h5>
+                            <small class="text-mute text-black-50">11/10/2021</small><br>
+                            <a href="#" class="btn btn-primary bg-red">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <div class="card border-0 p-2 shadow">
+                        <img src="./Assets/images/thong-bao-ptit.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title font-family-bold ">Thông báo cập nhật lịch D17</h5>
+                            <small class="text-mute text-black-50">11/10/2021</small><br>
+                            <a href="#" class="btn btn-primary bg-red">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2">
+                    <div class="card border-0 p-2 shadow">
+                        <img src="./Assets/images/thong-bao-ptit.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title font-family-bold ">Thông báo cập nhật lịch D21</h5>
+                            <small class="text-mute text-black-50">11/10/2021</small><br>
+                            <a href="#" class="btn btn-primary bg-red">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-2 ">
+                    <div class="card border-0 p-2 shadow">
+                        <img src="./Assets/images/thong-bao-ptit.jpg" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title font-family-bold ">Thông báo cập nhật lịch D19</h5>
+                            <small class="text-mute text-black-50">11/10/2021</small><br>
+                            <a href="#" class="btn btn-primary bg-red">Chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+
+        </div>
+
+
+        <div class="row justify-content-end">
+            <div class="mt-4 load-more col-sm-2">
+                <a href="./pages/news/index.html" class="btn btn-outline-danger">Xem thêm</a>
+            </div>
+        </div>
+
+    </section>
+
+    <hr class="featurette-divider">
+
+    <!-- video -->
+
+    <section class="mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 mb-3" data-aos="fade-up">
+                    <h3 class="text-red font-family-bold">
+                        Video
+                    </h3>
+                    <iframe class="mt-2" width="700" height="393.75" src="https://www.youtube.com/embed/f-tlfYppqQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer class="footer bg-white shadow-lg pt-3 pb-5 border-bottom-red ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 mt-2 mb-4 ">
+                    <p class="text-center display-5 font-family-bold ">
+                        HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG
+                    </p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 "></div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer__column mb-4 ">
+                    <div class="footer__column-one d-flex align-items-center flex-column ">
+                        <div>
+                            <img src="Assets/images/ptit-logo.png " alt="logo " />
+                        </div>
+                        <div class="mt-4 d-flex justify-content-around w-100 mb-3 ">
+                            <a href="# " class="icon-footer rounded-circle bg-light d-flex justify-content-center align-items-center ">
+                                <i class="fab fa-facebook-square "></i>
+                            </a>
+                            <a href="# " class="icon-footer rounded-circle bg-light d-flex justify-content-center align-items-center ">
+                                <i class="fab fa-youtube "></i>
+                            </a>
+                            <a href="# " class="icon-footer rounded-circle bg-light d-flex justify-content-center align-items-center ">
+                                <i class="fab fa-google-plus "></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer__column mb-4 ">
+                    <div class="footer__column--two ">
+                        <h5 class="display-6 text-red font-family-bold ">
+                            Trụ sở chính:
+                        </h5>
+                        <p>
+                            122 Hoàng Quốc Việt, Q.Cầu Giấy, Hà Nội.
+                        </p>
+                        <h5 class="display-6 text-red font-family-bold ">
+                            Cơ sở đào tạo tại Hà Nội:
+                        </h5>
+                        <p>
+                            Km10, Đường Nguyễn Trãi, Q.Hà Đông, Hà Nội
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer__column mb-4 ">
+                    <div class="footer__column--two ">
+                        <h5 class="display-6 text-red font-family-bold ">
+                            Học viện cơ sở tại TP. Hồ Chí Minh:
+                        </h5>
+                        <p>
+                            122 Hoàng Quốc Việt, Q.Cầu Giấy, Hà Nội.11 Nguyễn Đình Chiểu, P. Đa Kao, Q.1 TP Hồ Chí Minh
+                        </p>
+                        <h5 class="display-6 text-red font-family-bold ">
+                            Cơ sở đào tạo tại TP Hồ Chí Minh:
+                        </h5>
+                        <p>
+                            Đường Man Thiện, P. Hiệp Phú, Q.9 TP Hồ Chí Minh
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer__column mb-4 ">
+                    <h5 class="display-6 text-red font-family-bold ">
+                        Địa chỉ:
+                    </h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6184.594910678308!2d105.78332901342435!3d20.97310420111682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acce762c2bb9%3A0xbb64e14683ccd786!2zSOG7jWMgVmnhu4duIENOIELGsHUgQ2jDrW5oIFZp4buFbiBUaMO0bmcgLSBIw6AgxJDDtG5n!5e0!3m2!1svi!2s!4v1635313100919!5m2!1svi!2s "
+                        style="border:0; " allowfullscreen=" " loading="lazy "></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript and Jquery -->
+    <script src="assets/vendor/bootstrap-4.6.0-dist/js/jquery-3.6.0.min.js "></script>
+    <script src="/assets/vendor/bootstrap-4.6.0-dist/js/popper.min.js "></script>
+    <!-- External js files -->
+    <script src="assets/js/main.js "></script>
+</body>
+
+</html>
