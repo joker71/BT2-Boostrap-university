@@ -1,30 +1,34 @@
-let search = $(".search");
-let searchBox = $("#search-box");
-let backToTop = $(".back-to-top");
+$(document).ready(function() {
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
-search.on("click", function(e) {
-    e.preventDefault();
-    searchBox.toggleClass("d-block");
-    searchBox.toggleClass("d-none");
-    search.toggleClass("active");
-});
+            // Store hash
+            var hash = this.hash;
 
-// Click outside searchBox
-$(document).mouseup(function(e) {
-    // if the target of the click isn't the container nor a descendant of the container
-    if (!searchBox.is(e.target) && searchBox.has(e.target).length === 0) {
-        searchBox.addClass('d-none');
-        searchBox.removeClass('d-block');
-        search.removeClass('active');
-    }
-});
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 900, function() {
 
-// back to top button
-backToTop.on("click", function(e) {
-    e.preventDefault();
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-});
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        } // End if
+    });
 
-$("#signup-advised").on("click", function(e) {
-    $("#liveToast").toast("show");
+    $(window).scroll(function() {
+        $(".").each(function() {
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+                $(this).addClass("slide");
+            }
+        });
+    });
 })
